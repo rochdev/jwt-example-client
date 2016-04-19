@@ -1,0 +1,27 @@
+<div class="login-box">
+  <div layout="column" class="md-whiteframe-z1">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools"><span>Login</span></h2>
+    </md-toolbar>
+
+    <md-content class="md-padding">
+      <form layout="column" ng-submit="$ctrl.login()">
+        <span class="error">{{$ctrl.message}}</span>
+
+        <md-input-container>
+          <label>Username</label>
+          <input type="text" ng-model="$ctrl.username"/>
+        </md-input-container>
+
+        <md-input-container>
+          <label>Password</label>
+          <input type="password" ng-model="$ctrl.password"/>
+        </md-input-container>
+
+        <div layout="row" layout-align="center center">
+          <md-button type="submit" class="md-raised md-primary">Login</md-button>
+        </div>
+      </form>
+    </md-content>
+  </div>
+</div>

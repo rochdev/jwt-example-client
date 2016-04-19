@@ -1,0 +1,17 @@
+<md-list>
+  <md-list-item class="md-2-line" ng-repeat="item in $ctrl.items">
+    <div class="md-list-item-text">
+      <h3>{{item.name}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+
+    <md-icon md-svg-src="content/icons/material/action/ic_search_24px.svg" ng-click="$ctrl.view(item)" aria-label="View" class="md-secondary md-hue-3"></md-icon>
+    <md-icon md-svg-src="content/icons/material/action/ic_delete_24px.svg" ng-click="$ctrl.remove(item)" aria-label="Delete" class="md-secondary md-warn"></md-icon>
+  </md-list-item>
+</md-list>
+
+<div layout="row" layout-align="center center">
+  <md-button class="md-primary md-raised" aria-label="Add" ng-click="$ctrl.add()">
+    Add
+  </md-button>
+</div>
