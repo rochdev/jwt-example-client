@@ -1,5 +1,7 @@
 # jwt-example-client
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rochdev/jwt-example-client.svg)](https://greenkeeper.io/)
+
 ## Setup for development
 
 Make sure you have `npm` and `bower` globally available, then run:
